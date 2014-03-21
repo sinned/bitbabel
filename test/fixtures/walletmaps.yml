@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  wallet: MyString
+  address: MyString
+  address_type: MyString
+
+two:
+  wallet: MyString
+  address: MyString
+  address_type: MyString

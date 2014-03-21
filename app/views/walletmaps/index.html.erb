@@ -1,0 +1,31 @@
+<h1>Listing walletmaps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wallet</th>
+      <th>Address</th>
+      <th>Address type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @walletmaps.each do |walletmap| %>
+      <tr>
+        <td><%= walletmap.wallet %></td>
+        <td><%= walletmap.address %></td>
+        <td><%= walletmap.address_type %></td>
+        <td><%= link_to 'Show', walletmap %></td>
+        <td><%= link_to 'Edit', edit_walletmap_path(walletmap) %></td>
+        <td><%= link_to 'Destroy', walletmap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Walletmap', new_walletmap_path %>

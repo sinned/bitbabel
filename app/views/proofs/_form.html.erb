@@ -1,0 +1,10 @@
+<h6>Add Proof</h6>
+<%= form_for([@walletmap, @walletmap.proofs.build]) do |f| %>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

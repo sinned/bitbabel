@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Wallet:</strong>
+  <%= @walletmap.wallet %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @walletmap.address %>
+</p>
+
+<p>
+  <strong>Address type:</strong>
+  <%= @walletmap.address_type %>
+</p>
+
+<h4>Proofs that this is the wallet address</h4>
+<%= render @walletmap.proofs %>
+<%= render "proofs/form" %>
+
+
+<%= link_to 'Edit', edit_walletmap_path(@walletmap) %> |
+<%= link_to 'Back', walletmaps_path %>
